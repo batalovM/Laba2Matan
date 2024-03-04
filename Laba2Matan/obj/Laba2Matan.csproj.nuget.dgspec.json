@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\batal\\Desktop\\4 семак дерьмецо)\\Выч Мат\\2 лаба\\Laba2Matan\\Laba2Matan\\Laba2Matan.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\batal\\Desktop\\4 семак дерьмецо)\\Выч Мат\\2 лаба\\Laba2Matan\\Laba2Matan\\Laba2Matan.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\batal\\Desktop\\4 семак дерьмецо)\\Выч Мат\\2 лаба\\Laba2Matan\\Laba2Matan\\Laba2Matan.csproj",
+        "projectName": "Laba2Matan",
+        "projectPath": "C:\\Users\\batal\\Desktop\\4 семак дерьмецо)\\Выч Мат\\2 лаба\\Laba2Matan\\Laba2Matan\\Laba2Matan.csproj",
+        "packagesPath": "C:\\Users\\batal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\batal\\Desktop\\4 семак дерьмецо)\\Выч Мат\\2 лаба\\Laba2Matan\\Laba2Matan\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\batal\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

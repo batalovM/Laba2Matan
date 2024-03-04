@@ -1,0 +1,14 @@
+C:\Users\batal\Desktop\4 семак дерьмецо)\Выч Мат\2 лаба\Laba2Matan\Laba2Matan\bin\Debug\net7.0\Laba2Matan.exe
+C:\Users\batal\Desktop\4 семак дерьмецо)\Выч Мат\2 лаба\Laba2Matan\Laba2Matan\bin\Debug\net7.0\Laba2Matan.deps.json
+C:\Users\batal\Desktop\4 семак дерьмецо)\Выч Мат\2 лаба\Laba2Matan\Laba2Matan\bin\Debug\net7.0\Laba2Matan.runtimeconfig.json
+C:\Users\batal\Desktop\4 семак дерьмецо)\Выч Мат\2 лаба\Laba2Matan\Laba2Matan\bin\Debug\net7.0\Laba2Matan.dll
+C:\Users\batal\Desktop\4 семак дерьмецо)\Выч Мат\2 лаба\Laba2Matan\Laba2Matan\bin\Debug\net7.0\Laba2Matan.pdb
+C:\Users\batal\Desktop\4 семак дерьмецо)\Выч Мат\2 лаба\Laba2Matan\Laba2Matan\obj\Debug\net7.0\Laba2Matan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\batal\Desktop\4 семак дерьмецо)\Выч Мат\2 лаба\Laba2Matan\Laba2Matan\obj\Debug\net7.0\Laba2Matan.AssemblyInfoInputs.cache
+C:\Users\batal\Desktop\4 семак дерьмецо)\Выч Мат\2 лаба\Laba2Matan\Laba2Matan\obj\Debug\net7.0\Laba2Matan.AssemblyInfo.cs
+C:\Users\batal\Desktop\4 семак дерьмецо)\Выч Мат\2 лаба\Laba2Matan\Laba2Matan\obj\Debug\net7.0\Laba2Matan.csproj.CoreCompileInputs.cache
+C:\Users\batal\Desktop\4 семак дерьмецо)\Выч Мат\2 лаба\Laba2Matan\Laba2Matan\obj\Debug\net7.0\Laba2Matan.dll
+C:\Users\batal\Desktop\4 семак дерьмецо)\Выч Мат\2 лаба\Laba2Matan\Laba2Matan\obj\Debug\net7.0\refint\Laba2Matan.dll
+C:\Users\batal\Desktop\4 семак дерьмецо)\Выч Мат\2 лаба\Laba2Matan\Laba2Matan\obj\Debug\net7.0\Laba2Matan.pdb
+C:\Users\batal\Desktop\4 семак дерьмецо)\Выч Мат\2 лаба\Laba2Matan\Laba2Matan\obj\Debug\net7.0\Laba2Matan.genruntimeconfig.cache
+C:\Users\batal\Desktop\4 семак дерьмецо)\Выч Мат\2 лаба\Laba2Matan\Laba2Matan\obj\Debug\net7.0\ref\Laba2Matan.dll
