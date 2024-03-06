@@ -2,78 +2,94 @@
 
 public class SimpleIterations
 {
-    private float[,] _A;
-    private float[] _b;
-    private float _eps;
+    private readonly float[,] _a;
+    private readonly float[] _b;
+    private readonly float _eps;
     
-    public SimpleIterations(float[,] A, float[] b, float eps)
+    public SimpleIterations(float[,] a, float[] b, float eps)
     {
-        _A = A;
+        _a = a;
         _b = b;
         _eps = eps;
     }
 
-    public IEnumerable<float> SimpleSolution()
+    private bool IsNeedToComplete(IReadOnlyList<float> xOld, IReadOnlyList<float> xNew)
     {
-        var n = _b.Length;
-        var x = new float[n];
-        var B = new float[n];
-        const int maxIter = 100;
-
-        MakeMatrixDiagonallyDominant();
-
-        Array.Copy(_b, x, n); 
-
-        for (var iter = 0; iter < maxIter; iter++)
+        var sumUp = 0f;
+        var sumLow = 0f;
+        for (var k = 0; k < xOld.Count; k++)
         {
-            for (var i = 0; i < n; i++)
-            {
-                B[i] = _b[i] / _A[i, i]; // Вычисляем Bi = bi/aii
-                for (var j = 0; j < n; j++)
-                {
-                    if (j != i )
-                    {
-                        B[j] -= (_A[i, j] / _A[i, i]); // Вычисляем aij = aij/aii
-                    }
-                    
-                }
-            }
-            if (Norm(x, B) <= _eps)
-            {
-                break;
-            }
-
-            Array.Copy(B, x, n);
+            sumUp += (float)Math.Pow(xNew[k] - xOld[k], 2);
+            sumLow += (float)Math.Pow(xNew[k], 2);
         }
 
+        return Math.Sqrt(sumUp / sumLow) < _eps;
+    }
+    public IEnumerable<float> SimpleSolution()
+    {
+        var n = _b.GetLength(0);
+        var x = new float[n];
+        Array.Copy(_b, x, n);
+        var numberOfIter = 0;
+        const int maxIter = 100;
+       
+        while (numberOfIter < maxIter)
+        {
+            var xPrev = new float[n];
+            Array.Copy(x, xPrev, n);
+            for (var k = 0; k < n; k++)
+            {
+                var s = 0f;
+                for (var j = 0; j < n; j++)
+                {
+                    if (j != k) s += _a[k, j] * x[j];
+                }
+
+                x[k] = _b[k] / _a[k, k] - s / _a[k, k];
+            }
+
+            if (IsNeedToComplete(xPrev, x) || Norm(xPrev, x) < 1) break;
+            numberOfIter += 1;
+        }
         return x;
     }
-    private float Norm(float[] x, float[] y)
+    private static float Norm(IEnumerable<float> x, float[] y)
     {
+        if (y == null) throw new ArgumentNullException(nameof(y));
         var norm = x.Select((t, i) => (float)Math.Pow(t - y[i], 2)).Sum();
         return (float)Math.Sqrt(norm);
     }
-
-    private void MakeMatrixDiagonallyDominant()
-    {
-        var n = _A.Length;
-        
-        for (var i = 0; i < _A.GetLength(0); i++)
-        {
-            float sum = 0;
-            for (var j = 0; j < _A.GetLength(1); j++)
-            {
-                if (j != i)
-                {
-                    sum += Math.Abs(_A[i, j]);
-                }
-            }
-        
-            _A[i, i] += sum + 1;
-        }
-    }
-    
- 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// private void MakeMatrixDiagonallyDominant()
+// {
+//     var n = _A.Length;
+//     
+//     for (var i = 0; i < _A.GetLength(0); i++)
+//     {
+//         float sum = 0;
+//         for (var j = 0; j < _A.GetLength(1); j++)
+//         {
+//             if (j != i)
+//             {
+//                 sum += Math.Abs(_A[i, j]);
+//             }
+//         }
+//     
+//         _A[i, i] += sum + 1;
+//     }
+// }
     
     
